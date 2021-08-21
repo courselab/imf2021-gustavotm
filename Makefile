@@ -9,6 +9,9 @@ invasive: bypass.o decode.o libcypher.so
 bypass.o: bypass.c
 	gcc -m32 -c $< -o $@
 
+file1: invasive
+	./decode -k ABC -d crypt1.dat file1
+
 .PHONY: clean run
 clean:
 	rm -f decode
