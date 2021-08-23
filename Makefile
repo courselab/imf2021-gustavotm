@@ -12,6 +12,9 @@ bypass.o: bypass.c
 file1: invasive
 	./decode -k ABC -d crypt1.dat file1
 
+file2: invasive
+	./decode -k ABC -d crypt2.dat file2
+
 fix.o: fix.S
 	as -32 $< -o $@
 
