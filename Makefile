@@ -17,7 +17,7 @@ fix.o: fix.S
 
 .PHONY: clean run
 clean:
-	rm -f decode
+	rm -f decode bypass.o fix.o
 
 run: decode
 	LD_LIBRARY_PATH=. ./decode
